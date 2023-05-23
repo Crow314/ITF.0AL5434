@@ -23,7 +23,7 @@ class RCounterClient
         IRCounter c1 = (IRCounter) registry.lookup( name );
 	for( int i=0 ; i<3 ; i++ )
 	{
-	    c1.up();
+	    System.out.println("c1.addn(3): "+c1.addn(3));
 	    System.out.println("c1.value=="+c1.getValue());
 	}
     }

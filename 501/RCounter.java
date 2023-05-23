@@ -18,6 +18,13 @@ public class RCounter extends java.rmi.server.UnicastRemoteObject
     {
 	val ++ ;
     }
+
+    public int addn(int n) throws java.rmi.RemoteException {
+        int tmp = val;
+        val += n;
+        return(tmp);
+    }
+
     public int getValue() throws java.rmi.RemoteException
     {
 	return( val );
